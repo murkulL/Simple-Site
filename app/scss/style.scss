@@ -104,7 +104,6 @@
     }
     &__box-video{
         margin-bottom: 57px;
-
     }
 }
 .footer{
@@ -137,8 +136,7 @@
     }
     &__video{
         max-width: 100%;
-        max-height: 400px;
-        
+        max-height: 400px;  
     }
 }
 }
@@ -163,7 +161,6 @@
             max-height: 200px;
             
         }
-        
     }
 }
 @media (max-width: 660px){
@@ -175,11 +172,6 @@
 
             grid-template-columns: repeat(3, 1fr);
         }
-    // &__video{
-    //     max-width: 100%;
-    //     max-height:100px;
-    // }
-
     }  
     .design{
         &__link{
@@ -230,5 +222,4 @@
             text-align: center;
         }
     }
-   
 }
