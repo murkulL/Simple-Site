@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,21 +15,21 @@
         <header class="header">
             <div class="container">
                 <nav class="menu">
-                    <ul class="menu-items">
-                        <li class="menu-item">
-                            <a class="munu-link" href="#">Homepage</a>
+                    <ul class="header__menu-items">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Homepage</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="munu-link" href="#">About author</a>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">About author</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="munu-link" href="#">Works</a>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Works</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="munu-link" href="#">Process</a>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Process</a>
                         </li>
-                        <li class="menu-item">
-                            <a class="munu-link" href="#">Contacts</a>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -51,42 +55,42 @@
                 <div class="container">
                     <ul class="projects__items">
                         <li class="projects__item">
-                            <img class="projects__img" src="/app/images/projects-img1.svg" alt="img">
+                            <img class="projects__img" src="./images/projects-img1.svg" alt="img">
                             <div class="projects__span-items">
                                 <span class="projects__span-number">40+</span>
                                 <span class="projects__span-inscription">projects</span>
                             </div>
                         </li>
                         <li class="projects__item">
-                            <img class="projects__img" src="/app/images/projects-img2.svg" alt="img">
+                            <img class="projects__img" src="./images/projects-img1.svg" alt="img">
                             <div class="projects__span-items">
                                 <span class="projects__span-number">40+</span>
                                 <span class="projects__span-inscription">projects</span>
                             </div>
                         </li>
                         <li class="projects__item">
-                            <img class="projects__img" src="/app/images/projects-img3.svg" alt="img">
+                            <img class="projects__img" src="./images/projects-img1.svg" alt="img">
                             <div class="projects__span-items">
                                 <span class="projects__span-number">40+</span>
                                 <span class="projects__span-inscription">projects</span>
                             </div>
                         </li>
                         <li class="projects__item">
-                            <img class="projects__img" src="/app/images/projects-img4.svg" alt="img">
+                            <img class="projects__img" src="./images/projects-img1.svg" alt="img">
                             <div class="projects__span-items">
                                 <span class="projects__span-number">40+</span>
                                 <span class="projects__span-inscription">projects</span>
                             </div>
                         </li>
                         <li class="projects__item">
-                            <img class="projects__img" src="/app/images/projects-img5.svg" alt="img">
+                            <img class="projects__img" src="./images/projects-img1.svg" alt="img">
                             <div class="projects__span-items">
                                 <span class="projects__span-number">40+</span>
                                 <span class="projects__span-inscription">projects</span>
                             </div>
                         </li>
                         <li class="projects__item">
-                            <img class="projects__img" src="/app/images/projects-img6.svg" alt="img">
+                            <img class="projects__img" src="./images/projects-img1.svg" alt="img">
                             <div class="projects__span-items">
                                 <span class="projects__span-number">40+</span>
                                 <span class="projects__span-inscription">projects</span>
@@ -101,9 +105,11 @@
                         <h3 class="how-do__title">How do I work</h3>
                         <p class="how-do__text">Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century.</p>
                     </div>
-                    <figure>
-                        <iframe width="1110" height="600" src="https://www.youtube.com/embed/3MW99y1Yfro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="how-do__video-container">
+                    <figure class="how-do__box-video">
+                        <iframe class="how-do__video" width="1110" height="600" src="https://www.youtube.com/embed/3MW99y1Yfro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </figure>
+                    </div>
                 </div>
             </section>
         </main>
@@ -116,5 +122,6 @@
             </div>
         </footer>
     </div>
+    <script src="/app/js/main.min.js"></script>
 </body>
 </html>
