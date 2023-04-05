@@ -12,6 +12,22 @@ window.addEventListener('load', function(){
         
 
     })
+    // showHeaderBtn.addEventListener('click', function() {
+    //     if (menu.style.display === 'none') {
+    //         menuacticve.style.transform = 'translateY(-100%)';
+    //       setTimeout(function() {
+    //         menuacticve.style.transition = 'transform 0.5s';
+    //         menuacticve.style.transform = 'translateY(0)';
+    //       }, 0);
+    //     } else {
+    //         menuacticve.style.transition = 'transform 0.5s';
+    //         menuacticve.style.transform = 'translateY(-100%)';
+    //       setTimeout(function() {
+    //         menuacticve.style.display = 'none';
+    //       }, 500);
+    //     }
+    //   });
+      
 })
 
 
