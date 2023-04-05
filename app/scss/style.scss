@@ -7,11 +7,10 @@
 
 .header{
     height: 227px;
-    background: #EEEFF1;
+    // background: #EEEFF1;
     &__menu-items{
         display: flex;
         gap: 42px;
-        
     }
     &__menu-item{
         letter-spacing: 0.1em;
@@ -25,6 +24,9 @@
     }
     ul{
         padding: 79px 0 79px 0 ;
+    }
+    &__arrow-img{
+        display: none;
     }
 }
 .design{
@@ -141,85 +143,111 @@
 }
 }
 @media (max-width: 1060px) {
-    .projects{
-        height: 350px;
-        padding-bottom: 100px;
-        &__items{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            position: relative; 
-            justify-items: center;
-            align-items: center;
-        } 
-        &__span-items{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-
-        }
-        &__video{
-            max-width: 100%;
-            max-height: 200px;
-            
-        }
+.projects{
+    height: 350px;
+    padding-bottom: 100px;
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative; 
+        justify-items: center;
+        align-items: center;
+    } 
+    &__span-items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    &__video{
+        max-width: 100%;
+        max-height: 200px;
+        
     }
 }
+}
 @media (max-width: 660px){
-    .header{
-        height: 227px;
-        background: #EEEFF1;
-        &__menu-items{
-            display: grid;
-
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }  
-    .design{
-        &__link{
+.header{
+    height: 100px;
+    background: #EEEFF1;
+    position: relative;
+    &__menu-items{
+        display: none;
+    }
+    &__menu-item{
         display: block;
-        padding: 20px 40px;
-        color: #fff;
-        background: #34547A;
-        max-width: 200px;
-        margin: 0 auto;
-        }
-        &__title{
-            display: block;
-            text-align: center;
-            margin: auto;
-        }
-        &__text{
-            max-width: 300px;
-            display: block;
-            text-align: center;
-            margin: auto;
-            margin-bottom: 70px;
-        }
-
-    } 
-    .about{
-        &__text{
-            max-width: 300px;
-            text-align: center;
-        }
+        margin-top: 50px;
+        font-size: 20px;
     }
-    .projects{
-        height: 450px;
-        &__items{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
+    &__arrow-img{
+        display: block;
+        margin: 0 auto ;
+        z-index: 11;
+        position: relative;
+        margin-top: 20px;
+        transform :rotate(180deg);
     }
-    .how-do{
-        &__text{
-            max-width: 300px;
-        }
-        &__video{
-            height: 300px;
-        }
+    &__menu-items--active{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        background: #7db1f0;
+        width: 100%;
+        height: 100vh;
+        position: relative 
     }
-    .footer{
-        &__inner{
-            text-align: center;
-        }
+    &__arrow-down--active
+    &__arrow-img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%,);
     }
+}  
+.design{
+    &__link{
+    display: block;
+    padding: 20px 40px;
+    color: #fff;
+    background: #34547A;
+    max-width: 200px;
+    margin: 0 auto;
+    }
+    &__title{
+        display: block;
+        text-align: center;
+        margin: auto;
+    }
+    &__text{
+        max-width: 300px;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 70px;
+    }
+} 
+.about{
+    &__text{
+        max-width: 300px;
+        text-align: center;
+    }
+}
+.projects{
+    height: 450px;
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.how-do{
+    &__text{
+        max-width: 300px;
+    }
+    &__video{
+        height: 300px;
+    }
+}
+.footer{
+    &__inner{
+        text-align: center;
+    }
+}
 }
