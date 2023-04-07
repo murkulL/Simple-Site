@@ -6,7 +6,7 @@
 
 
 .header{
-    height: 227px;
+    height: 245px;
     background-color: #EEEFF1;
     &__menu-items{
         display: flex;
@@ -15,6 +15,9 @@
     &__menu-item{
         letter-spacing: 0.1em;
         text-transform: uppercase;  
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
     }
     &__menu-item:first-child &__menu-link {
         color: #34547A;
@@ -41,7 +44,7 @@ button{
         font-size: 48px;
         line-height: 79px;
         color: $title;
-        padding: 12px 0 60px 0 ;
+        padding-bottom: 60px;
     }
     &__text{
         max-width: 540px;
@@ -172,18 +175,15 @@ button{
 .header{
     height: 100px;
     position: relative;
-    
     &__menu-items{
         display: none;
         transform :translateY(-100%);
         // transition: .3s;
-        
     }
     &__menu-item{
         display: block;
         margin-top: 50px;
         font-size: 20px;
-        
     }
     &__arrow-img{
         display: block;
