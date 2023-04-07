@@ -176,12 +176,11 @@ button{
     height: 100px;
     position: relative;
     &__menu-items{
-        display: none;
-        transform :translateY(-100%);
-        // transition: .3s;
+        overflow:hidden;
+        transform :translateY(-100%); 
+        transition: .3s;    
     }
     &__menu-item{
-        display: block;
         margin-top: 50px;
         font-size: 20px;
     }
@@ -190,7 +189,7 @@ button{
         margin: 0 auto ;
         z-index: 11;
         position: relative;
-        margin-top: 20px;
+        top: -240px;
         transform :rotate(180deg);
     }
     &__menu-items--active{
@@ -198,15 +197,14 @@ button{
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
         background: #a2c0fb;
-        width: 100%;
-        height: 100vh;
-        transition: 0.5s ease-out;
+        max-height: 100%;
         transform: translateY(0);
         position: relative;
+        width: 100%;
         z-index: 99;
-        margin: 0;
-        padding: 0;
-        // transition: .3s;
+        transition: .3s;  
+        padding: 0; 
+        margin: 0;   
     }
     &__arrow-down--active
     &__arrow-img{
@@ -216,6 +214,9 @@ button{
         transform: translate(-50%, -50%,);
         z-index: 100;
     }
+.header ul{
+    padding: 127px 0 216px 0;
+}
 }  
 .design{
     &__link{
